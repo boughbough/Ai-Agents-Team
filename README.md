@@ -10,7 +10,6 @@
   <p>
     <a href="#"><img src="https://img.shields.io/badge/Statut-Terminé-2EA043?style=for-the-badge" alt="Statut" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Framework-OpenClaude_v0.17.1-FF6B35?style=for-the-badge" alt="OpenClaude" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Modèle-openai/gpt--oss--120b-000000?style=for-the-badge&logo=openai&logoColor=white" alt="Modèle" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Agents-7_spécialisés-2196F3?style=for-the-badge" alt="Agents" /></a>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/Licence-MIT-1A1A1A?style=for-the-badge&logo=github&logoColor=white" alt="License" /></a>
   </p>
@@ -36,7 +35,7 @@
 
 ---
 
-## 🤖 L'équipe d'agents IA
+## ✲ L'équipe d'agents IA
 
 ### Projet FlightReserva (6 agents)
 
@@ -47,20 +46,20 @@
 | `animation-specialist` | Animations | @keyframes, transitions CSS — jamais de JS |
 | `js-integrator` | Logique métier | JavaScript ES6+ vanilla — jamais de styles inline |
 | `java-backend` | Backend REST | Java 17+, Spring Boot — jamais de frontend |
-| `qa-reviewer` | Audit qualité | Révision transversale — 24/24 critères PASS ✅ |
+| `qa-reviewer` | Audit qualité | Révision transversale — 24/24 critères PASS |
 
 ### Projet Conjecture 7 (2 agents)
 
 | Agent | Rôle | Périmètre strict |
 | :--- | :--- | :--- |
 | `mathematicien` | Algorithmique | Python, NetworkX, brute-force domination |
-| `qa-reviewer` | Audit scientifique | Même agent que FlightReserva — réutilisabilité démontrée ✅ |
+| `qa-reviewer` | Audit scientifique | Même agent que FlightReserva — réutilisabilité démontrée |
 
 > **Principe clé** : les agents travaillent **séquentiellement** pour éviter les conflits de fichiers. Chaque System Prompt est défini dans `.openclaude/agents/`.
 
 ---
 
-## 📁 Cas d'application 1 — FlightReserva
+## ✲ Cas d'application 1 — FlightReserva
 
 Plateforme web de réservation de vols **100% client-side** :
 
@@ -76,7 +75,7 @@ Audit QA final : 24/24 PASS — 0 erreur critique
 
 ---
 
-## 🔬 Cas d'application 2 — Conjecture 7
+## ✲ Cas d'application 2 — Conjecture 7
 
 Vérification expérimentale de la conjecture de Dickson Y.B. Annor :
 
@@ -93,7 +92,7 @@ Résultat : 200/200 HOLDS — 0 violation détectée
 
 ---
 
-## 🏗️ Architecture du projet
+## ✲ Architecture du projet
 
 ```
 claw-code/
@@ -112,7 +111,7 @@ claw-code/
 
 ---
 
-## 🚀 Lancement
+## ✲ Lancement
 
 ### FlightReserva
 ```bash
@@ -182,7 +181,7 @@ openclaude --dangerously-skip-permissions
 
 ---
 
-## 🛠️ Stack technique
+## ✲ Stack technique
 
 | Secteur | Technologie |
 | :--- | :--- |
@@ -196,7 +195,7 @@ openclaude --dangerously-skip-permissions
 
 ---
 
-## 👤 Auteur
+## ✲ Auteur
 
 <div align="center">
 
@@ -211,7 +210,7 @@ openclaude --dangerously-skip-permissions
 
 ---
 
-## 📝 Licence
+## ✲ Licence
 
 Ce projet est sous licence MIT.
 
