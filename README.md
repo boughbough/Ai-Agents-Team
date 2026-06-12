@@ -11,7 +11,7 @@
     <a href="#"><img src="https://img.shields.io/badge/Statut-Terminé-2EA043?style=for-the-badge" alt="Statut" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Framework-OpenClaude_v0.17.1-FF6B35?style=for-the-badge" alt="OpenClaude" /></a>
     <a href="#"><img src="https://img.shields.io/badge/Modèle-openai/gpt--oss--120b-000000?style=for-the-badge&logo=openai&logoColor=white" alt="Modèle" /></a>
-    <a href="#"><img src="https://img.shields.io/badge/Agents-9_spécialisés-2196F3?style=for-the-badge" alt="Agents" /></a>
+    <a href="#"><img src="https://img.shields.io/badge/Agents-7_spécialisés-2196F3?style=for-the-badge" alt="Agents" /></a>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/Licence-MIT-1A1A1A?style=for-the-badge&logo=github&logoColor=white" alt="License" /></a>
   </p>
 
@@ -32,7 +32,7 @@
 
 <br />
 
-> **Orchestration multi-agents IA** est un framework de développement automatisé reposant sur une équipe de **9 agents IA spécialisés**, orchestrés via **OpenClaude** et **OpenRouter**. Chaque agent a un rôle strict défini par un System Prompt — ensemble ils conçoivent, développent, auditent et valident des projets complexes de manière autonome. Deux cas d'application valident l'architecture : une plateforme web full-stack (**FlightReserva**) et une preuve expérimentale en théorie des graphes (**Conjecture 7**).
+> **Orchestration multi-agents IA** est un framework de développement automatisé reposant sur une équipe de **7 agents IA spécialisés**, orchestrés via **OpenClaude** et **OpenRouter**. Chaque agent a un rôle strict défini par un System Prompt — ensemble ils conçoivent, développent, auditent et valident des projets complexes de manière autonome. Deux cas d'application valident l'architecture : une plateforme web full-stack (**FlightReserva**) et une preuve expérimentale en théorie des graphes (**Conjecture 7**).
 
 ---
 
@@ -49,12 +49,11 @@
 | `java-backend` | Backend REST | Java 17+, Spring Boot — jamais de frontend |
 | `qa-reviewer` | Audit qualité | Révision transversale — 24/24 critères PASS ✅ |
 
-### Projet Conjecture 7 (3 agents)
+### Projet Conjecture 7 (2 agents)
 
 | Agent | Rôle | Périmètre strict |
 | :--- | :--- | :--- |
 | `mathematicien` | Algorithmique | Python, NetworkX, brute-force domination |
-| `documentaliste` | Rédaction | LaTeX scientifique — jamais de code |
 | `qa-reviewer` | Audit scientifique | Même agent que FlightReserva — réutilisabilité démontrée ✅ |
 
 > **Principe clé** : les agents travaillent **séquentiellement** pour éviter les conflits de fichiers. Chaque System Prompt est défini dans `.openclaude/agents/`.
@@ -66,7 +65,7 @@
 Plateforme web de réservation de vols **100% client-side** :
 
 - 🛫 **500 vols** simulés, 40 routes internationales, 20 compagnies, 10 ans (2026–2036)
-- 🔍 **9 filtres** : origine, destination, compagnie, classe, dates, prix, durée, places
+- 🔍 **Plein de filtres** : origine, destination, compagnie, classe, dates, prix, durée, places
 - 📋 **Formulaire de réservation** complet (passager, bagages, repas)
 - 📧 **Email de confirmation** automatique via EmailJS
 - 🎨 Hero animé, typewriter CSS, compteurs IntersectionObserver, carousel
@@ -98,7 +97,7 @@ Résultat : 200/200 HOLDS — 0 violation détectée
 
 ```
 claw-code/
-├── .openclaude/agents/      ← System Prompts des 9 agents
+├── .openclaude/agents/      ← System Prompts des 7 agents
 ├── .claude/agent-memory/    ← Mémoire persistante inter-sessions
 ├── siteweb/                 ← FlightReserva (HTML/CSS/JS/Java)
 │   ├── css/styles.css       ← Design system (30 sections)
