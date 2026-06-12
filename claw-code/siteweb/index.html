@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlightReserva – réservation de vols facile">
+<title>Flight Reserva - Plateforme de Réservation </title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+
+    <header class="navbar navbar--hero fade-in" aria-label="Main navigation">
+  <div class="logo"><a href="index.html">FlightReserva</a></div>
+  <nav class="nav-links" aria-label="Primary" id="primary-navigation">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="flights.html">Vols</a>
+    <a href="about.html">A propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle menu">
+    <svg width="24" height="24" viewBox="0 0 100 80" fill="currentColor">
+      <rect width="100" height="12"></rect>
+      <rect y="30" width="100" height="12"></rect>
+      <rect y="60" width="100" height="12"></rect>
+    </svg>
+  </button>
+</header>
+<section id="accueil" class="parallax section1 fade-in" style="background-image: url('assets/img/parallax-bg1.jpg');">
+        <div class="container">
+            <h1 class="typewriter">Réservez votre vol en toute simplicité</h1>
+            <p>Trouvez et réservez vos vols avec notre plateforme intuitive conçue pour les voyageurs du monde entier.</p>
+            <div class="hero-stats">
+  <div class="hero-stat"><span class="hero-stat-number" data-target="500">0</span><span class="hero-stat-label">Vols disponibles</span></div>
+  <div class="hero-stat"><span class="hero-stat-number" data-target="40">0</span><span class="hero-stat-label">Destinations</span></div>
+  <div class="hero-stat"><span class="hero-stat-number" data-target="20">0</span><span class="hero-stat-label">Compagnies</span></div>
+  <div class="hero-stat"><span class="hero-stat-number" data-target="10">0</span><span class="hero-stat-label">Ans de vols</span></div>
+</div>
+<a href="flights.html" class="button">Réserver maintenant</a>
+        </div>
+    </section>
+
+    <section id="fonctionnalites" class="parallax section2 fade-in">
+        <div class="container">
+            <h2>Pourquoi choisir FlightReserva ?</h2>
+            <div class="features">
+                <div class="feature fade-in">
+                    <div class="feature-icon">🕐</div>
+                    <h3>Assistance 24/7</h3>
+                    <p>Notre équipe est disponible à toute heure pour vous aider à réserver ou modifier vos vols.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Annulation flexible</h3>
+                    <p>Annulez ou modifiez votre réservation facilement, selon les conditions tarifaires.</p>
+                </div>
+                <div class="feature fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Paiements sécurisés</h3>
+                    <p>Toutes les transactions sont cryptées et traitées via des passerelles de confiance.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="destinations-section">
+      <div class="container">
+        <h2>Destinations populaires</h2>
+        <p class="destinations-subtitle">Explorez nos routes les plus demandées à travers le monde</p>
+        <div class="destinations-grid">
+
+          <a href="flights.html?destination=Paris CDG" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&q=80" alt="Paris" />
+            <div class="destination-overlay">
+              <h3>Paris</h3>
+              <span>France • CDG</span>
+            </div>
+          </a>
+
+          <a href="flights.html?destination=New York JFK" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400&q=80" alt="New York" />
+            <div class="destination-overlay">
+              <h3>New York</h3>
+              <span>USA • JFK</span>
+            </div>
+          </a>
+
+          <a href="flights.html?destination=Tokyo NRT" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80" alt="Tokyo" />
+            <div class="destination-overlay">
+              <h3>Tokyo</h3>
+              <span>Japon • NRT</span>
+            </div>
+          </a>
+
+          <a href="flights.html?destination=Dubai DXB" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&q=80" alt="Dubai" />
+            <div class="destination-overlay">
+              <h3>Dubai</h3>
+              <span>EAU • DXB</span>
+            </div>
+          </a>
+
+          <a href="flights.html?destination=London LHR" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?w=400&q=80" alt="Londres" />
+            <div class="destination-overlay">
+              <h3>Londres</h3>
+              <span>UK • LHR</span>
+            </div>
+          </a>
+
+          <a href="flights.html?destination=Sydney SYD" class="destination-card">
+            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400&q=80" alt="Sydney" />
+            <div class="destination-overlay">
+              <h3>Sydney</h3>
+              <span>Australie • SYD</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax section3 fade-in" aria-label="Live flight status carousel" role="region">
+        <div class="carousel">
+            <div class="carousel__track">
+                <div class="carousel__slide" id="live-flight-slide">
+                    <h3>Statut des vols en direct</h3>
+                    <p id="live-flight-text">Chargement...</p>
+                </div>
+                <div class="carousel__slide">
+                    <h3>Nos partenaires de confiance</h3>
+                    <div class="partners">
+                        <img src="assets/svg/airfrance.svg" alt="Air France" />
+                        <img src="assets/svg/emirates.svg" alt="Emirates" />
+                        <img src="assets/svg/british.svg" alt="British Airways" />
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <h3>Prêt à décoller ?</h3>
+                    <a href="flights.html" class="button">Réserver →</a>
+                </div>
+            </div>
+            <button class="carousel__nav carousel__nav--left" aria-label="Previous slide">&#9664;</button>
+            <button class="carousel__nav carousel__nav--right" aria-label="Next slide">&#9654;</button>
+            <div class="carousel__indicators"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 FlightReserva. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/FlightData.js"></script>
+    <script>
+// Live flight - closest upcoming flight
+(function() {
+  if (typeof FLIGHT_DATA === 'undefined') return;
+  var today = new Date().toISOString().split('T')[0];
+  var upcoming = FLIGHT_DATA
+    .filter(function(f) { return f.departDate >= today; })
+    .sort(function(a, b) { return a.departDate.localeCompare(b.departDate); });
+  var flight = upcoming[0];
+  var el = document.getElementById('live-flight-text');
+  if (flight && el) {
+    el.innerHTML = flight.origin + ' → ' + flight.destination + ', ' + flight.departTime + ' - <span style="color:#2196f3;font-weight:600;">À l\'heure ✓</span>';
+  }
+})();
+
+// Animated counters
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 2000;
+  const step = target / (duration / 16);
+  let current = 0;
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = Math.floor(current) + (target >= 100 ? '+' : '');
+  }, 16);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.hero-stat-number').forEach(el => {
+  counterObserver.observe(el);
+});
+
+
+
+// Navbar transparent on load (index only)
+
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+// Force fade-in visible
+document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+// Hamburger menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+menuToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('active');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+
+        // Simple parallax effect
+        window.addEventListener('scroll', function() {
+            document.querySelectorAll('.parallax').forEach(section => {
+                let yPos = -(window.scrollY / 2);
+                section.style.backgroundPositionY = yPos + 'px';
+            });
+        });
+            // IntersectionObserver for fade‑in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in, h1, h2, h3, p, .section1 p, .section2 p, .section3 p, .section4 p').forEach(el => observer.observe(el));
+        // Carousel functionality
+    const carousel = document.querySelector('.carousel');
+    const track = carousel.querySelector('.carousel__track');
+    const slides = Array.from(track.children);
+    const prevBtn = carousel.querySelector('.carousel__nav--left');
+    const nextBtn = carousel.querySelector('.carousel__nav--right');
+    const indicatorsContainer = carousel.querySelector('.carousel__indicators');
+
+    // Create indicators
+    slides.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'carousel__indicator';
+        if (i === 0) dot.classList.add('active');
+        dot.dataset.index = i;
+        indicatorsContainer.appendChild(dot);
+    });
+    const indicators = Array.from(indicatorsContainer.children);
+
+    let currentIndex = 0;
+    const updateCarousel = (index) => {
+        currentIndex = (index + slides.length) % slides.length;
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        indicators.forEach(d => d.classList.toggle('active', +d.dataset.index === currentIndex));
+    };
+
+    const nextSlide = () => updateCarousel(currentIndex + 1);
+    const prevSlide = () => updateCarousel(currentIndex - 1);
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    indicatorsContainer.addEventListener('click', e => {
+        if (e.target.classList.contains('carousel__indicator')) {
+            updateCarousel(+e.target.dataset.index);
+        }
+    });
+
+    // Autoplay
+    let autoplay = setInterval(nextSlide, 5000);
+    // Pause on hover
+    carousel.addEventListener('mouseenter', () => clearInterval(autoplay));
+    carousel.addEventListener('mouseleave', () => {
+        autoplay = setInterval(nextSlide, 5000);
+    });
+
+</script>
+</body>
+</html> 

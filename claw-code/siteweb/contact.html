@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact FlightReserva – support, feedback or partnership inquiries.">
+<title>Contact - FlightReserva</title>
+    <link rel="stylesheet" href="css/styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+</head> 
+<body>
+    <header class="navbar navbar--solid fade-in" aria-label="Main navigation">
+  <div class="logo"><a href="index.html">FlightReserva</a></div>
+  <nav class="nav-links" aria-label="Primary" id="primary-navigation">
+    <a href="index.html">Accueil</a>
+    <a href="flights.html">Vols</a>
+    <a href="about.html">A propos</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+  <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle menu">
+    <svg width="24" height="24" viewBox="0 0 100 80" fill="currentColor">
+      <rect width="100" height="12"></rect>
+      <rect y="30" width="100" height="12"></rect>
+      <rect y="60" width="100" height="12"></rect>
+    </svg>
+  </button>
+</header>
+    <section class="hero">
+        <h1>Contactez-nous</h1>
+        <p>Contactez-nous pour du support, des retours ou des demandes de partenariat.</p>
+    </section>
+    <form class="contact-form" id="contactForm">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="from">De</label>
+        <input type="text" id="from" name="from" />
+        <label for="to">À</label>
+        <input type="text" id="to" name="to" />
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="button">Envoyer</button>
+    </form>
+    <div id="toast" class="toast" role="alert" aria-live="assertive">Message envoyé avec succès !</div>
+    <script>
+        emailjs.init('UqeLjks1TM-tmkwFu');
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = this;
+            const templateParams = {
+                name: form.name.value,
+                email: form.email.value,
+                from: form.from.value || 'Non renseigne',
+                to: form.to.value || 'Non renseigne',
+                date: form.date.value || 'Non renseignee',
+                message: form.message.value
+            };
+            emailjs.send('service_rmfm8fc', 'template_9fo9r54', templateParams)
+                .then(function() {
+                    const toast = document.getElementById('toast');
+                    toast.classList.add('show');
+                    setTimeout(() => toast.classList.remove('show'), 3000);
+                    form.reset();
+                })
+                .catch(function(error) {
+                    console.error('EmailJS error:', error);
+                    alert('Erreur lors de l envoi. Veuillez reessayer.');
+                });
+        });
+    </script>
+
+<script>
+// Navbar fade-in
+document.querySelector('.navbar').classList.add('visible');
+// Hamburger menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+if (menuÀggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+}
+</script>
+</body>
+</html>
