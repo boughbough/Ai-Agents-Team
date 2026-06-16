@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="372" height="404" alt="logo_orchestration" src="https://github.com/user-attachments/assets/e9301b39-7635-413e-a1db-7dc8704127ad" />
+<img width="170" height="200" alt="logo_orchestration" src="https://github.com/user-attachments/assets/e9301b39-7635-413e-a1db-7dc8704127ad" />
 
   <h1>O R C H E S T R A T I O N</h1>
   <h2>Multi-agents IA pour le développement logiciel et scientifique</h2>
